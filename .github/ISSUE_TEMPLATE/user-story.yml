@@ -1,0 +1,63 @@
+name: 📋 User Story
+description: Create a user story for feature development
+title: "[USER STORY] "
+labels: ["user-story", "pm-agent"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## User Story Template
+        *Created by Project Manager Agent*
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: As a [user type], I want [functionality] so that [business value]
+      placeholder: |
+        As a user, I want to create new todo items so that I can track tasks I need to complete.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define what constitutes "done" for this story
+      placeholder: |
+        - [ ] User can click "Add Task" button
+        - [ ] User can enter task description
+        - [ ] Task appears in the task list
+        - [ ] Task has default priority of "Medium"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Business priority for this story
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any additional context or requirements
+      placeholder: Consider mobile responsiveness and accessibility
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Next Steps:**
+        1. @architecture-agent will add technical specifications
+        2. @dev-agent will implement the feature
+        3. Architecture and PM agents will review the PR

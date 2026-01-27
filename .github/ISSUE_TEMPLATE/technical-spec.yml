@@ -1,0 +1,91 @@
+name: 🏗️ Technical Specification
+description: Add technical specifications to a user story
+title: "[TECH SPEC] "
+labels: ["technical-spec", "arch-agent"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Technical Specification Template
+        *Created by Architecture Agent*
+
+  - type: input
+    id: related-story
+    attributes:
+      label: Related User Story
+      description: Link to the user story issue number
+      placeholder: "#123"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-approach
+    attributes:
+      label: Technical Approach
+      description: High-level implementation strategy
+      placeholder: |
+        - Frontend: React component with state management
+        - Backend: REST API endpoint for task creation
+        - Database: SQLite table schema for tasks
+    validations:
+      required: true
+
+  - type: textarea
+    id: api-design
+    attributes:
+      label: API Design
+      description: Define API endpoints, request/response formats
+      placeholder: |
+        POST /api/tasks
+        Request: { title: string, priority: string, category?: string }
+        Response: { id: number, title: string, priority: string, created_at: string }
+    validations:
+      required: false
+
+  - type: textarea
+    id: database-schema
+    attributes:
+      label: Database Schema
+      description: Define database changes needed
+      placeholder: |
+        CREATE TABLE tasks (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          title TEXT NOT NULL,
+          priority TEXT DEFAULT 'Medium',
+          completed BOOLEAN DEFAULT FALSE,
+          created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
+    validations:
+      required: false
+
+  - type: textarea
+    id: component-design
+    attributes:
+      label: Component Design
+      description: Frontend component structure and props
+      placeholder: |
+        TaskForm: { onSubmit: (task) => void, priorities: string[] }
+        TaskList: { tasks: Task[], onToggle: (id) => void }
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing-strategy
+    attributes:
+      label: Testing Strategy
+      description: How should this feature be tested
+      placeholder: |
+        - Unit tests for task creation logic
+        - Integration tests for API endpoint
+        - E2E tests for user workflow
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Implementation Ready:**
+        Once approved by PM, @dev-agent can implement according to these specifications.
