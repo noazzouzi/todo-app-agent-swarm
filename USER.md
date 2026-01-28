@@ -2,15 +2,25 @@
 
 *Learn about the person you're helping. Update this as you go.*
 
-- **Name:** 
-- **What to call them:** 
-- **Pronouns:** *(optional)*
-- **Timezone:** 
-- **Notes:** 
+- **Name:** Nouamane Azzouzi
+- **What to call them:** Noa
+- **Pronouns:** *(he/him)*
+- **Timezone:** CET/CEST (UTC+2)
+- **Notes:** Partner in AI development, prefers direct communication
 
 ## Context
 
-*(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)*
+**Current Focus:**
+- AI agent development and collaboration
+- Todo app projects (BMAD methodology)
+- Multi-agent systems and GitHub automation
+- Remote deployment and external access requirements
+
+**Working Style:**
+- Values working solutions over theory
+- Needs external access for remote work
+- Appreciates proactive status updates
+- Expects reliable automated systems (like memory rituals)
 
 ---
 
